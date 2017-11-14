@@ -1,0 +1,84 @@
+@import '_normalize.styl'
+body
+  background-color:#EFEFEF;
+.container
+  background-color:#fff;
+  width:720px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top:40px;
+  height:800px;
+  padding-left: 0px;
+  padding-right: 0px;
+
+.webchat-container
+  width:310px;
+  height:auto;
+  min-height: 260px;
+  background-color #ab0012;
+  border-radius: 5px;
+  padding: 10px;
+  position:relative;
+.webchat-title
+  color:#fff;
+  font-size: 18px;
+.webchat-chatNow
+  color:#fff;
+  text-decoration: underline;
+  font-size: 16px;
+  float: right;
+  bottom: 10px;
+  right: 10px;
+  position:absolute;
+.webchat-chatbox
+  background-color: #dfdfdf;
+  border-radius: 5px;
+  padding: 10px;
+  color: #666;
+  border: 2px solid #fff;
+  height:auto;
+  position:relative;
+  margin-top:10px;
+  margin-bottom:60px;
+  min-height: 200px;
+
+.webchat-chatbox::after
+  position: absolute;
+  height: 0px;
+  width: 0px;
+  content: '';
+  left: 201px;
+  bottom: -40px;
+  border-left: 40px solid #dfdfdf;
+  border-bottom: 40px solid transparent;
+.webchat-chatbox::before
+  position: absolute;
+  height: 0px;
+  width: 0px;
+  content: '';
+  left: 199px;
+  bottom: -44px;
+  border-left: 43px solid #fff;
+  border-bottom: 43px solid transparent;
+.webchat-person
+  font-size:14px;
+  color:#000;
+.webchat-reply,.webchat-inquiry
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 10px;
+  padding: 5px;
+.webchat-inquiry
+  background-color #eee;
+  border-radius: 4px;
+.webchat-button
+  color: #fff;
+  display: inline;
+  border: 1px solid #fff;
+  margin-left: 10px;
+  padding: 3px;
+.webchat-bottom
+  position: relative;
+  bottom: 10px;
+  margin-top: 30px;
